@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
                 tv1.clearFocus()
             }else{
                 Toast.makeText(applicationContext, "write something", Toast.LENGTH_LONG).show()
-
             }
         }
 
