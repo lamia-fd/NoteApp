@@ -30,9 +30,14 @@ class MainActivity : AppCompatActivity() {
         myRv.layoutManager = LinearLayoutManager(this)
 
         button.setOnClickListener {
-            addNote()
-            tv1.clearFocus()
 
+            if(tv1.text.isNotBlank()) {
+                addNote()
+                tv1.clearFocus()
+            }else{
+                Toast.makeText(applicationContext, "write something", Toast.LENGTH_LONG).show()
+
+            }
         }
 
     }
